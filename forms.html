@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie store</title> 
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="/images/movie_filter_FILL0_wght400_GRAD0_opsz48.svg">
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-bar">
+      <div class="logo">
+         movie store
+      </div>
+      <ul class="nav-link">
+          <li><a class="active" href="/index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <a href="#">Admin <i class="fa fa-caret-down"></i></a>
+            
+            <ul class="dropdown-nav-link">
+              <li><a href="/forms.html">Form</a></li>
+              <li><a href="/table.html">Table</a></li>
+              <li><a href="/movie-detail.html">Movie Detail</a></li>
+                <li><a href="#">Link 4</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+      </ul>
+    </nav>
+    <section class="container">
+       <form class="w-40">
+         <h2 class="pb-10">Add Movies</h2>
+          <div class="input-container">
+            <label for="MovieName" class="w-40">Movie Name</label>
+            <input type="text" class="input">
+          </div>
+          <div class="message-box pd-x-28 error">
+             Movie name is required
+          </div>
+
+          <div class="input-container">
+            <label for="password" class="w-40">Password</label>
+            <input type="password" class="input">
+
+          </div>
+
+          <div class="input-container">
+            <label for="Genre" class="w-40">Genre</label>
+            <select class="input">
+              <option value="">--select--</option>
+              <option value="1">Comedy</option>
+              <option value="2">Action</option>
+              <option value="3">Romance</option>
+              <option value="4">Horror</option>
+            </select>
+          </div>
+          <div class="message-box pd-x-28 error">
+             Genre is required
+          </div>
+
+          <div class="alert mb-1">
+            Saved successfully
+          </div>
+         
+         <div class="input-container">
+         <button class="btn btn-default" type="submit">Save</button>
+         <a class="btn btn-sec" href="#">Add more</a>
+        </div>
+       </form>
+    </section>
+    <footer>
+            &#169; 2022 Ravindra Devrani 
+    </footer>
+</body>
+</html>
